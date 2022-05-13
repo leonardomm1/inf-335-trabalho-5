@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
                 steps {
+                    sh "sudo su"
                     sh "docker build -t ola_mundo ."
                 }
             }
