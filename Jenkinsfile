@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     stages {
         stage('build') {
                 steps {
@@ -11,6 +12,5 @@ pipeline {
                     sh "docker run --rm ola_mundo"
                 }
             }
-        }
     }
 }
